@@ -2,9 +2,13 @@
 Collection of projects involving CSV manipulation and plotting
 
 Iterations:
+
 1 - csv-2-graphs
+
 2 - sample-every-nth-from-csv
-  - compare-csvs-with-graphs (added gui to csv-2-graphs)
+
+2.1 - compare-csvs-with-graphs (added gui to csv-2-graphs)
+  
 3 - compare-similar-csvs-on-same-graph
 
 Originally created to convert .csv data from technical flight sim testing at my YINI placement. I would often be given flight test data which I would have to plot individual graphs of time against each column on Excel; this was boring.
