@@ -9,11 +9,9 @@ output_dir = fd.askdirectory(title="Set output folder (plots will be saved here)
 
 # pandas read the csv and sanitise it for use
 # the sign for "y" is flipped as the input data is w r o n g
-# creates a new column "index" which counts how many arrows have been loosed
 df = pd.read_csv(input_file,sep=";")
 df.replace("\"","")
 df["neg_y"] = df["y"] * -1
-df["index"] = [i+1 for i in range(len(df))]
 
 sns.set_theme(style="darkgrid")
 
@@ -42,13 +40,6 @@ def set_params():
 # file
 def save_figure(output_dir,type):
     plt.savefig(output_dir+"/"+type+".png")
-
-# assign title
-# formats the date of shooting, round type and number of arrows loosed
-date = df.Date
-round = df["Standard round"]
-arrow = df["index"]
-title = f"{round[0]} on {date[0]}: N={arrow[len(arrow)-1]}\n"
 
 # Plots ax1 --> KDE Plot
 ax1 = sns.jointplot(data=df,x="x",y="neg_y",kind="kde",fill=True)
