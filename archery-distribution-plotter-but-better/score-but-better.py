@@ -38,7 +38,7 @@ def set_params():
 
 # procedure which will save the plots to the previously chosen output
 # file
-def save_figure(output_dir,type):
+def save_figure(output_dir,type): # <-- procedure for a single line lmao thats dumb
     plt.savefig(output_dir+"/"+type+".png")
 
 # Plots ax1 --> KDE Plot
