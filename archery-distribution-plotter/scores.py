@@ -33,7 +33,7 @@ arrow = df["index"]
 title = f"{round[0]} on {date[0]}: N={arrow[len(arrow)-1]}\n"
 
 # plots a joint plot showing the distribution of arrows
-sns.set_theme(style="darkgrid", palette="pastel")
+sns.set_theme(style="darkgrid")
 ax = sns.jointplot(data=df,x="x",y="neg_y",kind="kde",fill=True)
 
 # Sets the plot title and title location
@@ -59,9 +59,12 @@ ax.refline(x=0, y=0)
 # the circles
 ax.ax_joint.plot([0],[0],'o',ms=15,mec='gold',mfc='none')
 ax.ax_joint.plot([0],[0],'o',ms=60,mec='gold',mfc='none')
+ax.ax_joint.plot([0],[0],'o',ms=90,mec='red',mfc='none')
 ax.ax_joint.plot([0],[0],'o',ms=120,mec='red',mfc='none')
+ax.ax_joint.plot([0],[0],'o',ms=150,mec='DeepSkyBlue',mfc='none')
 ax.ax_joint.plot([0],[0],'o',ms=180,mec='DeepSkyBlue',mfc='none')
+ax.ax_joint.plot([0],[0],'o',ms=210,mec='black',mfc='none')
 ax.ax_joint.plot([0],[0],'o',ms=240,mec='black',mfc='none')
+ax.ax_joint.plot([0],[0],'o',ms=270,mec='white',mfc='none')
 ax.ax_joint.plot([0],[0],'o',ms=300,mec='white',mfc='none')
-
 plt.show()
