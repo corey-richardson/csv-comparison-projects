@@ -11,3 +11,5 @@ CSV Data is from the MyTargets app for Android
 - sets x/y limits
 - adds a reference line
 - overlays points reference circles
+
+Figure_1.png shows the KDE plot used in the script, Figure_2 shows the scatter plot with distributions to show the datapoints
