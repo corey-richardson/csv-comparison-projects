@@ -1,5 +1,7 @@
 The old code felt clunky so I redid it all :)
 
+CSV Data is from the MyTargets Archery app for Android
+
 Changes
 - Will now plot both a KDE Plot and a Scatter Plot (as opposed to only KDE Plot)
 - Asks the user to select an output file and now saves the plots instead of only showing them previously
