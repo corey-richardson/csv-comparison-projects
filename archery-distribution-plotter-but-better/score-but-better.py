@@ -13,7 +13,7 @@ df = pd.read_csv(input_file,sep=";")
 df.replace("\"","")
 df["neg_y"] = df["y"] * -1
 
-sns.set_theme(style="darkgrid")
+sns.set_theme(style="darkgrid", palette="pastel")
 
 # procedure which will plot the target face and reference line onto the 
 # passed in graph
@@ -39,7 +39,7 @@ def set_params():
 # procedure which will save the plots to the previously chosen output
 # file
 def save_figure(output_dir,type): # <-- procedure for a single line lmao thats dumb
-    plt.savefig(output_dir+"/"+type+".png")
+    plt.savefig(output_dir+"/"+type+".png", dpi=300)
 
 # Plots ax1 --> KDE Plot
 ax1 = sns.jointplot(data=df,x="x",y="neg_y",kind="kde",fill=True)
