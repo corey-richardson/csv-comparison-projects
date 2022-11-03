@@ -29,3 +29,5 @@ Next, I made the third iteration - "compare-similar-csvs-on-same-graph". This ve
 The issue that arose here was not due to script, but instead the data I was using; the technical data I was inputting to comapare was not the same length. 
 
 The real data still had the 93,998 rows whereas the sim data, despite being derived directly from the real data, had much less. This caused issues with the graphs not showing at the same scales and as such I didn't flesh out this version with a GUI and simply left it as a proof of concept which I can go back to as a reference in the future.
+
+I still believe there are improvements that can be made. Instead of outputting the graphs as a static image file, I could look into outputting them in a more interactive format, for example an Excel spreadsheet or localhost webpage.
